@@ -1,41 +1,91 @@
-
-header{
-    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(26, 46, 1) 100%);
+body{
+    background-color: #252525;
 }
-
-.header img{
-    width: 300px;
-    height: 100px;
-}
-.header{
+.alerta{
+    background-color: #fc0;
+    padding: 5px;
+    margin: 0;
+    align-items: center;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 10px;
-    position:sticky
-}
-.header nav ul{
-    display: flex;
-    column-gap: 15px;
-    list-style: none;
-    list-style-position: unset;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: right;
-}
-.header nav ul a{
-    color:white;
+    align-content: center;
+    width: 100%;
+    justify-content: center;
     text-decoration: none;
-    font-family: "Nunito Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-size: 20px;
-    font-variation-settings:
-    "wdth" 100,
-    "YTLC" 500;
+}
+.alerta-item{
+    color: #091a2b;
+    text-decoration: none;
+    font-family:sans-serif;
+    font-weight:600;
+    font-size: 15px;
+}
+.navbar-brand{
+    align-items: center;
 }
 
+.menu ul li a{
+    color: #252525;
+}
+.menu ul{
+    align-items: end;
+    padding-right: 15px;
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color:#091a2b !important;
+}
+.menu{
+    flex-grow: 0;
+}
+
+.navbar-nav .nav-link.active {
+    color: #fff;
+}
+.menu .link-menu:hover{
+    background-color:#252525;
+    border-radius: 10px;
+}
+.menu .link-menu{
+    color: beige;
+    flex-direction: row-reverse
+}
+.dropdown-menu {
+    --bs-dropdown-bg: #212529;
+}
+.menu-icon{
+    background-image: url(./../img/hamburger-list-menu-svgrepo-com.svg);
+}
+.menu-button{
+    border: none;
+}
+.menu-button:focus {
+    box-shadow: none;
+}
+.padding-0{
+    padding: 0;
+}
+@media screen and (max-width: 991px){
+    .menu{
+        position: absolute;
+        top: 160px;
+        background-color: #091a2b;
+        width: 100%;
+        padding-left: 0px;
+    }
+}
+
+.video{
+    margin-top: 10px;
+}
+
+.w-100 {
+    width: 100% !important;
+    height: 700px;
+}
+.carousel-inner{
+    margin-top: 10px;
+}
 .card {
     width: 380px;
     height: 400px;
@@ -78,6 +128,6 @@ form div label{
     color: white;
 }
 
-footer {
-    background-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(26, 46, 1) 100%); 
+footer{
+    background-color:#091a2b;
 }
