@@ -70,15 +70,7 @@ body{
 .padding-0{
     padding: 0;
 }
-@media screen and (max-width: 991px){
-    .menu{
-        position: absolute;
-        top: 160px;
-        background-color: #091a2b;
-        width: 100%;
-        padding-left: 0px;
-    }
-}
+
 
 .video{
     margin-top: 10px;
@@ -90,6 +82,11 @@ body{
 }
 .carousel-inner{
     margin-top: 10px;
+}
+.img-carousel{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
 }
 .card {
     width: 380px;
@@ -131,6 +128,61 @@ body{
 }
 form div label{
     color: white;
+}
+
+.title-galeria{
+    color: gray;
+}
+.grid-video{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px;
+    margin-top: 0;
+}
+.video-galeria{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-galeria{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(6,400px);
+    grid-template-areas: 
+    "img1 img2"
+    "img1 img2"
+    "img5 img4"
+    "img5 img4"
+    "img6 img6"
+    "img3 img3";
+    margin: 1rem 3rem 3rem 3rem;
+    gap: 1rem;
+    
+}
+.img1{
+    grid-area: img1;
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+}
+.img5{
+    grid-area: img5;
+}
+.img6{
+    grid-area: img6;
+}
+.grid-galeria img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
 }
 
 .contenedor-footer{
@@ -177,6 +229,17 @@ form div label{
     width: 15px;
     height: 15px;
 }
+@media screen and (max-width: 991px){
+    .menu{
+        position: absolute;
+        top: 160px;
+        background-color: #091a2b;
+        width: 100%;
+        padding-left: 0px;
+    }
+
+}
+
 @media screen and (max-width: 1024px){
     .contenedor-footer{
         display: grid;
@@ -186,6 +249,7 @@ form div label{
     .contenedor-footer2{
         flex-direction: column;
     }
+    
 }
 @media screen and (max-width: 768px){
     .contenedor-footer{
@@ -196,4 +260,19 @@ form div label{
     .contenedor-footer2{
         flex-direction: column;
     }
+    .grid-galeria{
+        grid-template-columns: 1fr;
+    }
+    .grid-galeria{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6,400px);
+        grid-template-areas: 
+    "img1"
+    "img2"
+    "img3"
+    "img4"
+    "img5"
+    "img6";
+    }
+    
 }
