@@ -71,7 +71,6 @@ body{
     padding: 0;
 }
 
-
 .video{
     margin-top: 10px;
 }
@@ -163,11 +162,11 @@ form div label{
 .card2 {
     width: 600px;
     height: 650px;
+    margin-top: 30px;
     background-color: #091a2b;
     border-radius: 20px 0px;
     overflow: hidden;
     box-shadow: 10px 11px 13px 1px rgba(0,0,0,0.75);;
-    position: relative;
 }
 
 .card2 img {
@@ -240,6 +239,38 @@ form div label{
 
 }
 
+.grid-2{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-evenly
+}
+.elemento1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 15px;
+    margin: 5px;
+    background-color: #272c30;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.elemento2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin: 5px;
+    background-color: #272c30;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.elemento1 div {
+    align-items: flex-start;
+}
 .contenedor-footer{
     display: flex;
     background-color:#091a2b;
@@ -302,6 +333,9 @@ form div label{
         grid-template-columns: 50% 50%;
     }
     .contenedor-footer2{
+        flex-direction: column;
+    }
+    .grid-2{
         flex-direction: column;
     }
     
