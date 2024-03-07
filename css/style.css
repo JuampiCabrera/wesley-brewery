@@ -271,6 +271,9 @@ form div label{
 .elemento1 div {
     align-items: flex-start;
 }
+.mapa{
+    object-fit: cover;
+}
 .contenedor-footer{
     display: flex;
     background-color:#091a2b;
