@@ -256,6 +256,7 @@ form div label{
     background-color: #272c30;
     border-radius: 15px;
     object-fit: cover;
+    width: 50%;
 }
 .elemento2{
     display: flex;
@@ -267,9 +268,13 @@ form div label{
     background-color: #272c30;
     border-radius: 15px;
     object-fit: cover;
+    width: 50%;
 }
 .elemento1 div {
     align-items: flex-start;
+}
+.input-contacto{
+    align-items: end;
 }
 .mapa{
     object-fit: cover;
@@ -340,6 +345,14 @@ form div label{
     }
     .grid-2{
         flex-direction: column;
+        align-items: center;
+    }
+    .elemento1{
+        width: 80%;
+
+    }
+    .elemento2{
+        width: 80%;
     }
     
 }
@@ -365,6 +378,9 @@ form div label{
     "img4"
     "img5"
     "img6";
+    }
+    .elemento1{
+        justify-content: center;
     }
     
 }
