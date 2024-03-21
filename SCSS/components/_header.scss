@@ -1,0 +1,65 @@
+/*header*/
+header{
+    .alerta{
+        background-color: #fc0;
+        padding: 5px;
+        margin: 0;
+        align-items: center;
+        display: flex;
+        align-content: center;
+        width: 100%;
+        justify-content: center;
+        text-decoration: none;
+        .alerta-item{
+            color: #091a2b;
+            text-decoration: none;
+            font-family:sans-serif;
+            font-weight:600;
+            font-size: 15px;
+            }
+        }
+    .bg-body-tertiary {
+        --bs-bg-opacity: 1;
+        background-color:#091a2b !important;
+        .padding-0{
+            padding: 0;
+        }
+        div{
+            .menu-icon{
+                background-image: url(./../img/hamburger-list-menu-svgrepo-com.svg);
+                }
+            .menu-button{
+                border: none;
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+            .navbar-brand{
+                align-items: center;
+            }
+            .menu{
+                flex-grow: 0;
+                ul{
+                    align-items: end;
+                    padding-right: 15px;
+                    .link-menu{
+                        color: beige;
+                        flex-direction: row-reverse;
+                        &:hover{
+                            background-color:#252525;
+                            border-radius: 10px;
+                        }
+                    }
+                    .dropdown-menu {
+                        --bs-dropdown-bg: #212529;
+                        .navbar-nav .nav-link.active {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
