@@ -1,10 +1,14 @@
 /*main-contacto*/
 .main-contacto {
     .grid-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .elemento1 {
             display: flex;
             justify-content: center;
             align-items: center;
+            width: 100%;
             background: linear-gradient(rgba(0 0 0 / .8), rgba(0 0 0 / .8)), url(./../img/imagen-contacto.jpg);
             background-position: center center;
             background-size: cover;
@@ -13,19 +17,21 @@
             .contenedor-contacto {
                 display: grid;
                 grid-template-columns: repeat(2, 50%);
-                padding: 20px;
+                padding: 15px;
                 gap: 15px;
                 width: 100%;
 
                 .container-info {
-                    color: #fff;
+                    color: $color-texto;
                     display: flex;
                     flex-direction: column;
-                    gap: 50px;
+                    align-items: center;
+                    gap: 5px;
 
                     .links {
                         display: flex;
                         gap: 15px;
+
                         a {
                             text-decoration: none;
                             width: 40px;
@@ -33,12 +39,15 @@
                             background: rgba(20, 140, 220, 0.212);
                             text-align: center;
                             border-radius: 5px;
-                            &:hover{
-                                background: rgba(20, 140, 220, 0.096);
+
+                            &:hover {
+                                background: $color-hover;
                             }
-                            i{
-                                position:relative;
-                                img{
+
+                            i {
+                                position: relative;
+
+                                img {
                                     width: 40px;
                                     height: 40px;
                                     object-fit: cover;
@@ -62,6 +71,7 @@
                 form {
                     .input-box {
                         position: relative;
+
                         input {
                             width: 100%;
                             height: 40px;
@@ -72,7 +82,7 @@
                             border: 3px solid transparent;
                             letter-spacing: 1px;
                             transition: .3s;
-                            color: #fff;
+                            color: $color-texto;
                         }
 
                         textarea {
@@ -85,7 +95,7 @@
                             letter-spacing: 1px;
                             outline: none;
                             transition: .3s;
-                            color: #fff;
+                            color: $color-texto;
                             letter-spacing: 1.5px;
                         }
                     }
@@ -94,14 +104,14 @@
                         width: 100%;
                         padding: 10px;
                         outline: none;
-                        background:#091a2b;
-                        color: #fff;
+                        background: $color-principal;
+                        color: $color-texto;
                         border: none;
                         cursor: pointer;
                         font-size: 15px;
 
                         &:hover {
-                            background: #091a2ba6;
+                            background: $color-hover;
                         }
                     }
                 }
@@ -111,16 +121,20 @@
 }
 
 .elemento2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
+    @include flex(column, center, wrap, center);
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    padding: 5px;
     margin: 5px;
-    background-color: #272c30;
+    background-color: $color-principal;
     border-radius: 15px;
     object-fit: cover;
     width: 100%;
+    .titulo-secundario{
+        color: $color-texto;
+    }
 
     .mapa {
         object-fit: cover;

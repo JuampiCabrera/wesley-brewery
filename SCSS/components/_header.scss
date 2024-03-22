@@ -11,7 +11,7 @@ header{
         justify-content: center;
         text-decoration: none;
         .alerta-item{
-            color: #091a2b;
+            color: $color-principal;
             text-decoration: none;
             font-family:sans-serif;
             font-weight:600;
@@ -20,7 +20,7 @@ header{
         }
     .bg-body-tertiary {
         --bs-bg-opacity: 1;
-        background-color:#091a2b !important;
+        background-color: $color-principal !important;
         .padding-0{
             padding: 0;
         }
@@ -43,17 +43,17 @@ header{
                     align-items: end;
                     padding-right: 15px;
                     .link-menu{
-                        color: beige;
+                        color: $color-texto;
                         flex-direction: row-reverse;
                         &:hover{
-                            background-color:#252525;
+                            background-color:$color-hover;
                             border-radius: 10px;
                         }
                     }
                     .dropdown-menu {
-                        --bs-dropdown-bg: #212529;
+                        --bs-dropdown-bg:#091a2b;
                         .navbar-nav .nav-link.active {
-                            color: #fff;
+                            color: $color-texto;
                         }
                     }
                 }

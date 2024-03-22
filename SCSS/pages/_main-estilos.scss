@@ -9,7 +9,7 @@
             width: 600px;
             height: 650px;
             margin-top: 30px;
-            background-color: #091a2b;
+            background-color: $color-principal;
             border-radius: 20px 0px;
             overflow: hidden;
             box-shadow: 10px 11px 13px 1px rgba(0,0,0,0.75);;
@@ -19,14 +19,15 @@
                 object-fit: cover;
             }
             .card2-texto{
-                color: #fc0;
+                color: $color-texto;
                 font-size: 18px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
                 text-align: center;
-                justify-content: center;
                 height: 150px;
+                @include flex(column, center, nowrap, center);
+                // display: flex;
+                // flex-direction: column;
+                // align-items: center;
+                // justify-content: center;
             }
         }
     }
