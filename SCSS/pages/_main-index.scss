@@ -18,6 +18,10 @@
             object-fit: cover;
         }
     }
+    h1{
+        color: $color-texto;
+        margin-top: 15px;
+    }
     .contenedor-estilos{
         display: flex;
         flex-wrap: wrap;
@@ -25,15 +29,15 @@
         row-gap: 15px;
         .card{
             display: flex;
-            width: 380px;
-            height: 400px;
+            width: 400px;
+            height: 500px;
             border-radius: 20px 0px;
             overflow: hidden;
             box-shadow: 10px 11px 13px 1px rgba(0,0,0,0.75);
             position: relative;
             img{
                 width: 100%;
-                height: 200px;
+                height: 250px;
                 object-fit: cover;
             }
             .descuento{
@@ -52,7 +56,8 @@
                 // align-items: center;
                 // justify-content: center;
                 // text-align: center;
-                height: 200px;
+                height: 250px;
+                margin: 10px;
             }
         }
     }
