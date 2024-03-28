@@ -1,68 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>wesley-brewery</title>
-        <link rel="icon" href="./../img/logo-wesley.png">
-        <!-- link fuentes-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:ital,opsz,wght@0,6..12,200 1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wesley-brewery</title>
+    <link rel="icon" href="./../img/logo-wesley.png">
+    <!-- link fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:ital,opsz,wght@0,6..12,200 1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <!--link bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- link css-->
-        <link rel="stylesheet" href="./../css/style.css">
-        <link rel="stylesheet" href="./../css/main.css">
-    </head>
+    <link rel="stylesheet" href="./../css/main.css">
+    <!--link iconos-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
 <body>
     <header>
-        <div class="alerta">
-            <a class="alerta-item" href="./../index.html">Beber es perjudicial para la salud</a>
-        </div>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary nav">
-            <div class="container-fluid padding-0 img-header">
-                <a class="navbar-brand" href="./../index.html">
-                    <img src="./../img/logo-wesley.png" alt="logo de wesley">
-                </a>
-                <button class="navbar-toggler menu-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon menu-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active link-menu" aria-current="page" href="./../index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active link-menu" href="./nosotros.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle nav-link active link-menu" href="./estilos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Estilos</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item link-menu" href="./../pages/estilos.html#Golden Ale">Golden Ale</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item link-menu" href="./../pages/estilos.html#Scottish">Scottish</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item link-menu" href="./../pages/estilos.html#American Pale Ale">American Pale Ale</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item link-menu" href="./../pages/estilos.html#Indian Pale Ale">Indian Pale Ale</a>
-                            </li>
-                        </ul>     
-                    <li class="nav-item">
-                        <a class="nav-link active link-menu" href="./../pages/galeria.html">Galeria</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active link-menu" href="./../pages/contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+        <a href="./index.html" class="logo"><img src="./../img/logo-wesley.png" alt="logo de wesley"></a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+        <nav class="navbar-1">
+            <ul class="nav-menu">
+                <li class="menu">
+                    <a class="menu-item" aria-current="page" href="./../index.html" style="--i:0">Home</a>
+                </li>
+                <li class="menu">
+                    <a class="menu-item" href="./nosotros.html" style="--i:1">Nosotros</a>
+                </li>
+                <li class="menu">
+                    <a class="menu-item" href="./estilos.html" style="--i:2">Estilos</a>
+                <li class="menu">
+                    <a class="menu-item" href="./galeria.html" style="--i:3">Galeria</a>
+                </li>
+                <li class="menu">
+                    <a class="menu-item" href="./contacto.html" style="--i:5">Contacto</a>
+                </li>
+            </ul>
         </nav>
     </header>
     <main class="main-nosotros">
@@ -72,17 +59,22 @@
         <div class="contenedor-historia">
             <img src="./../img/barriles-camioneta.jpg" alt="barriles-camioneta">
             <p>
-                Wesley Brewery tiene sus orígenes en la década del 50, cuando Eduardo Wesley, ex combatiente de la 2da guerra mundial, se instala en la Patagonia.
+                Wesley Brewery tiene sus orígenes en la década del 50, cuando Eduardo Wesley, ex combatiente de la 2da
+                guerra mundial, se instala en la Patagonia.
             </p>
         </div>
         <div class="contenedor-historia">
             <p>
-                Con espíritu emprendedor, estableció su chacra en las afueras de Bariloche, donde desarrollo diversas actividades, entre ellas, la elaboración casera de licores, sidras y cerveza con productos regionales.
+                Con espíritu emprendedor, estableció su chacra en las afueras de Bariloche, donde desarrollo diversas
+                actividades, entre ellas, la elaboración casera de licores, sidras y cerveza con productos regionales.
             </p>
         </div>
         <div class="contenedor-historia">
             <p>
-                Sesenta años después, sus nietos siguen sus pasos, esta vez, con la producción de cerveza artesanal. Allí elaboran sus cervezas con el agua más pura de la Cordillera, que nace de vertientes de la falda del Cerro Campanario. Utiliza lúpulos frescos de la Comarca Andina, importados y maltas de excelente calidad.
+                Sesenta años después, sus nietos siguen sus pasos, esta vez, con la producción de cerveza artesanal.
+                Allí elaboran sus cervezas con el agua más pura de la Cordillera, que nace de vertientes de la falda del
+                Cerro Campanario. Utiliza lúpulos frescos de la Comarca Andina, importados y maltas de excelente
+                calidad.
             </p>
             <img src="./../img/historia-fabrica.jpg" alt="historia-fabrica">
         </div>
@@ -96,7 +88,9 @@
                 <H3 class="title-footer">Downtown Pub Wesley Brewery</H3>
                 <ul>
                     <li>
-                        <a href="https://www.google.com/maps/dir//20+de+Febrero+451+casa+1,+San+Carlos+de+Bariloche,+R%C3%ADo+Negro/@-41.1352637,-71.3941558,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x961a7b0d50beeb83:0x8939ad291e46d53f!2m2!1d-71.311755!2d-41.1352931?entry=ttu">20 de Febrero 451 casa 1, San Carlos de Bariloche, Río Negro</a>
+                        <a
+                            href="https://www.google.com/maps/dir//20+de+Febrero+451+casa+1,+San+Carlos+de+Bariloche,+R%C3%ADo+Negro/@-41.1352637,-71.3941558,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x961a7b0d50beeb83:0x8939ad291e46d53f!2m2!1d-71.311755!2d-41.1352931?entry=ttu">20
+                            de Febrero 451 casa 1, San Carlos de Bariloche, Río Negro</a>
                     </li>
                     <li>
                         Horario: Mart-Sab 12:30pm-2am Dom-Lun 5pm-2am
@@ -110,7 +104,9 @@
                 <h4 class="title-footer">Wesley Brewery - Fábrica y Tap Garden</h4>
                 <ul>
                     <li>
-                        <a href="https://www.google.com/maps/dir//Av.+Exequiel+Bustillo+15500,+San+Carlos+de+Bariloche,+R%C3%ADo+Negro/@0,0,22z/data=!4m6!4m5!1m0!1m2!1m1!1s0x961a76907738ac6f:0xe165e0cff4cafe66!3e0?gl=ar">Av. Exequiel Bustillo 15500, San Carlos de Bariloche, Río Negro</a>
+                        <a
+                            href="https://www.google.com/maps/dir//Av.+Exequiel+Bustillo+15500,+San+Carlos+de+Bariloche,+R%C3%ADo+Negro/@0,0,22z/data=!4m6!4m5!1m0!1m2!1m1!1s0x961a76907738ac6f:0xe165e0cff4cafe66!3e0?gl=ar">Av.
+                            Exequiel Bustillo 15500, San Carlos de Bariloche, Río Negro</a>
                     </li>
                     <li>
                         MARTES A DOMINGO 13-21 hs
@@ -124,13 +120,15 @@
                 <h2 class="title-footer">Contacto</h2>
                 <ul>
                     <li>
-                        <a href="https://www.instagram.com/wesleybrewery/?hl=es" target="_blank"><img class= "img-footer"src="./../img/logotipo-de-instagram.png" alt="Logo Instagram">Intagram</a>
+                        <a href="https://www.instagram.com/wesleybrewery/?hl=es" target="_blank"><img class="img-footer"
+                                src="./../img/logotipo-de-instagram.png" alt="Logo Instagram">Intagram</a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/wesleybrewery" target="_blank"><img class= "img-footer" src="./../img/facebook-logo.svg" alt="Logo Facebook">Facebook</a>
+                        <a href="https://www.facebook.com/wesleybrewery" target="_blank"><img class="img-footer"
+                                src="./../img/facebook-logo.svg" alt="Logo Facebook">Facebook</a>
                     </li>
                     <li>
-                        <a href="#">Fábrica Tel. (+54 294) 154-538512;</a> 
+                        <a href="#">Fábrica Tel. (+54 294) 154-538512;</a>
                     </li>
                     <li>
                         <a href="#">Downtown Pub Tel. (+54 294) 154-283664</a>
@@ -138,8 +136,11 @@
                 </ul>
             </div>
         </div>
-        
+
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,65 +1,72 @@
 /*header*/
-header{
-    .alerta{
-        background-color: #fc0;
-        padding: 5px;
-        margin: 0;
-        align-items: center;
-        display: flex;
-        align-content: center;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 180px;
+    // background: rgba(0, 0, 0, .1);
+    // backdrop-filter: blur(50px);
+    padding: 1.3rem 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        justify-content: center;
-        text-decoration: none;
-        .alerta-item{
-            color: $color-principal;
-            text-decoration: none;
-            font-family:sans-serif;
-            font-weight:600;
-            font-size: 15px;
-            }
-        }
-    .bg-body-tertiary {
-        --bs-bg-opacity: 1;
-        background-color: $color-principal !important;
-        .padding-0{
-            padding: 0;
-        }
-        div{
-            .menu-icon{
-                background-image: url(./../img/hamburger-list-menu-svgrepo-com.svg);
-                }
-            .menu-button{
-                border: none;
-                &:focus {
-                    box-shadow: none;
-                }
-            }
-            .navbar-brand{
-                align-items: center;
-            }
+        height: 100%;
+        background-image: linear-gradient(to bottom ,#091a2b 40%,#091a2b36 90%);
+        backdrop-filter: blur(70px);
+        z-index: -1;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+        transition: .5s;
+    }
+    &:hover::after{
+        left: 100%;
+    }
+    .logo{
+        width: 10px;
+        height: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .icons{
+        position: absolute;
+        right: 5%;
+        font-size: 2.8rem;
+        color: #fff;
+        cursor: pointer;
+        display: none;
+    }
+    #check{
+        display: none;
+    }
+    .navbar-1{
+        .nav-menu{
+            display: flex;
             .menu{
-                flex-grow: 0;
-                ul{
-                    align-items: end;
-                    padding-right: 15px;
-                    .link-menu{
-                        color: $color-texto;
-                        flex-direction: row-reverse;
-                        &:hover{
-                            background-color:$color-hover;
-                            border-radius: 10px;
-                        }
-                    }
-                    .dropdown-menu {
-                        --bs-dropdown-bg:#091a2b;
-                        .navbar-nav .nav-link.active {
-                            color: $color-texto;
-                        }
-                    }
+                list-style: none;
+                .menu-item{
+                    font-size: 1.10rem;
+                    color: $color-texto;
+                    text-decoration: none;
+                    font-weight: 500;
+                    margin-left: 2.5rem;
                 }
             }
         }
     }
 }
-
-

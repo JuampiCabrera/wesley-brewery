@@ -1,14 +1,3 @@
-@media screen and (max-width: 991px) {
-    .menu {
-        position: absolute;
-        top: 160px;
-        background-color: #091a2b;
-        width: 100%;
-        padding-left: 0px;
-    }
-
-}
-
 @media screen and (max-width: 1024px) {
 
     .contenedor-footer {
@@ -27,7 +16,71 @@
     }
 }
 
+@media screen and (max-width: 992px) {
+    header {
+        padding: 1.3rem 5%;
+    }
+}
+
 @media screen and (max-width: 768px) {
+    header {
+        .icons {
+            display: inline-flex;
+
+            #close-icon {
+                display: none;
+            }
+        }
+
+        #check:checked~.icons #close-icon {
+            display: block;
+        }
+
+        #check:checked~.icons #menu-icon {
+            display: none;
+        }
+
+        .navbar-1 {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background: rgba(0, 0, 0, .1);
+            backdrop-filter: blur(50px);
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+            overflow: hidden;
+            transition: .3s ease;
+
+            .nav-menu {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .menu {
+                    .menu-item {
+                        display: flex;
+                        font-size: 1.1rem;
+                        margin: 15px;
+                        text-align: center;
+                        transform: translateY(-50px);
+                        opacity: 0;
+                        transition: .3s ease;
+                    }
+                }
+            }
+        }
+        #check:checked~.navbar-1 {
+            height: 17.7rem;
+        }
+        #check:checked~.navbar-1 .nav-menu .menu .menu-item {
+            transform: translateY(0);
+            opacity: 1;
+            transition-delay: calc(.15s * var(--i));
+        }
+    }
+
+
     .main-galeria {
         .grid-galeria {
             display: grid;
@@ -67,14 +120,14 @@
         }
     }
 
-    .main-contacto{
-        .grid-2{
-            .elemento1{
-                .contenedor-contacto{
+    .main-contacto {
+        .grid-2 {
+            .elemento1 {
+                .contenedor-contacto {
                     width: 95%;
                     display: flex;
                     flex-direction: column;
-                    gap:20px;
+                    gap: 20px;
                 }
             }
         }
