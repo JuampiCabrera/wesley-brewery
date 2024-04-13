@@ -12,7 +12,7 @@
 
 /*estilos globales*/
 body {
-  background-color: #091a2b;
+  background-color: #01060a;
 }
 
 /*header*/
@@ -36,7 +36,7 @@ header::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to bottom, #091a2b 40%, rgba(9, 26, 43, 0.2117647059) 90%);
+  background-image: linear-gradient(to bottom, #030c14 40%, rgba(9, 26, 43, 0.2117647059) 90%);
   backdrop-filter: blur(70px);
   z-index: -1;
 }
@@ -87,7 +87,7 @@ header .navbar-1 .nav-menu .menu .menu-item {
 /*footer*/
 .contenedor-footer {
   display: flex;
-  background-color: #091a2b;
+  background-color: #01060a;
   width: 100%;
   padding: 10px;
   margin-top: 15px;
@@ -204,14 +204,14 @@ header .navbar-1 .nav-menu .menu .menu-item {
 }
 .main-index .section-card .cards .back {
   transform: perspective(600px) rotateY(180deg);
-  background: rgb(3, 35, 45);
+  background: #01060a;
   padding: 15px;
   color: #f3f3f3;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  box-shadow: 0 5px 10px #000;
+  box-shadow: 0 5px 10px #e2e1e1;
 }
 .main-index .section-card .cards .back .link-card {
   border-top: solid 1px #f3f3f3;
@@ -260,37 +260,93 @@ header .navbar-1 .nav-menu .menu .menu-item {
 }
 
 /* contenedor estilos*/
-.main-estilos .contenedor-estilos {
-  margin-top: 200px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  row-gap: 15px;
-}
-.main-estilos .contenedor-estilos .card2 {
-  width: 600px;
-  height: 650px;
-  margin-top: 30px;
-  background-color: #091a2b;
-  border-radius: 20px 0px;
-  overflow: hidden;
-  box-shadow: 10px 11px 13px 1px rgba(0, 0, 0, 0.75);
-}
-.main-estilos .contenedor-estilos .card2 img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-}
-.main-estilos .contenedor-estilos .card2 .card2-texto {
-  color: #fff;
-  font-size: 18px;
-  text-align: center;
-  height: 150px;
+.main-estilos {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  flex-wrap: nowrap;
   justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+.main-estilos h1 {
+  margin: 10px;
+  font-size: 50px;
+  color: #fff;
+}
+.main-estilos .card-area {
+  padding: 50px 0;
+}
+.main-estilos .card-area .wrapped {
+  padding: 10px 10px;
+}
+.main-estilos .card-area .wrapped .box-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  margin: 5px;
+  margin-top: 50px;
+}
+.main-estilos .card-area .wrapped .box-area .box {
+  width: 400px;
+  height: 500px;
+  margin: 10px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 1px 1px 1px 1px rgba(214, 214, 252, 0.5);
+}
+.main-estilos .card-area .wrapped .box-area .box:hover img {
+  transform: scale(1.2);
+}
+.main-estilos .card-area .wrapped .box-area .box:hover .overlay {
+  height: 100%;
+}
+.main-estilos .card-area .wrapped .box-area .box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s;
+}
+.main-estilos .card-area .wrapped .box-area .box .overlay {
+  height: 0;
+  width: 100%;
+  background: linear-gradient(transparent, #04070a 95%);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+.main-estilos .card-area .wrapped .box-area .box .overlay h3 {
+  font-weight: 500;
+  margin-bottom: 2px;
+  margin-top: 80%;
+  font-family: bebas neue;
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.main-estilos .card-area .wrapped .box-area .box .overlay p {
+  color: #fff;
+}
+.main-estilos .card-area .wrapped .box-area .box .overlay a {
+  margin-top: 2px;
+  color: #262626;
+  text-decoration: none;
+  font-size: 14px;
+  background: #fff;
+  border-radius: 50px;
+  text-align: center;
+  padding: 5px 15px;
 }
 
 /*main galeria*/
@@ -438,7 +494,7 @@ header .navbar-1 .nav-menu .menu .menu-item {
   width: 100%;
   padding: 10px;
   outline: none;
-  background: #091a2b;
+  background: #01060a;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -456,7 +512,7 @@ header .navbar-1 .nav-menu .menu .menu-item {
   justify-content: center;
   padding: 5px;
   margin: 5px;
-  background-color: #091a2b;
+  background-color: #01060a;
   border-radius: 15px;
   object-fit: cover;
   width: 100%;
