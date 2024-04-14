@@ -2,6 +2,8 @@
 .main-index {
     .video {
         margin-top: 200px;
+        margin-left: 10px;
+        margin-right: 10px;
 
         .w-100 {
             width: 100%;
@@ -9,18 +11,30 @@
         }
     }
 
-    .carousel-inner {
-        top: 10px;
+    .carousel {
+        margin: 10px;
+        width: 98%;
         display: flex;
-        justify-content: flex-start;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
 
-        .img-carousel {
-            width: 100%;
-            height: 700px;
-            object-fit: cover;
+        .carousel-inner {
+            top: 10px;
+            margin: 10px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .img-carousel {
+                width: 100%;
+                height: 100vh;
+                object-fit: cover;
+            }
         }
     }
+
+
 
     h1 {
         color: $color-texto;
@@ -40,10 +54,12 @@
             width: 400px;
             height: 500px;
             margin: 10px;
-            &:hover .front{
+
+            &:hover .front {
                 transform: perspective(600px) rotateY(180deg);
             }
-            &:hover .back{
+
+            &:hover .back {
                 transform: perspective(600px) rotateY(360deg);
             }
 
@@ -56,28 +72,32 @@
                 overflow: hidden;
                 transition: .5s;
             }
-            .front{
+
+            .front {
                 transform: perspective(600px) rotatey(0deg);
                 box-shadow: 0 5px 10px #000;
-                img{
+
+                img {
                     position: absolute;
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                     opacity: .70;
                 }
-                h3{
+
+                h2 {
                     position: absolute;
                     bottom: 0;
                     width: 100%;
                     height: 45px;
                     line-height: 45px;
                     color: #fff;
-                    background: rgba(0,0,0,.4);
+                    background: rgba(0, 0, 0, .4);
                     text-align: center;
                 }
             }
-            .back{
+
+            .back {
                 transform: perspective(600px) rotateY(180deg);
                 background: $color-principal;
                 padding: 15px;
@@ -87,20 +107,24 @@
                 justify-content: space-between;
                 text-align: center;
                 box-shadow: 0 5px 10px #e2e1e1;
-                .link-card{
+
+                .link-card {
                     border-top: solid 1px #f3f3f3;
                     height: 50px;
                     line-height: 50px;
-                    a{
+
+                    a {
                         color: #f3f3f3;
                     }
                 }
-                h3{
+
+                h3 {
                     font-size: 30px;
                     margin-top: 20px;
                     letter-spacing: 2px;
                 }
-                p{
+
+                p {
                     letter-spacing: 1px;
 
                 }
